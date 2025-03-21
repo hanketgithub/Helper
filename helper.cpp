@@ -1,4 +1,8 @@
-static void print_binary(const char *label, uint8_t *data, uint32_t size)
+#include <cstdio>
+#include <cstdint>
+
+
+void print_binary(const char *label, uint8_t *data, uint32_t size)
 {
   const int bytes_per_line = 16;
 
