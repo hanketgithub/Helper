@@ -11,7 +11,7 @@ uint8_t InfoFrame[] = {
 
 int main(int argc, char *argv[]) {
 
-  print_binary("AVI InfoFrame", InfoFrame, sizeof(InfoFrame));
+  hexprint("AVI InfoFrame", InfoFrame, sizeof(InfoFrame));
 
   return 0;
 }

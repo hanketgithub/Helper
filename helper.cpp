@@ -1,9 +1,10 @@
 #include <cstdio>
 #include <cstdint>
 
-
-void print_binary(const char *label, uint8_t *data, uint32_t size)
-{
+/**
+ * Print 16 byte in a line, each 8 byte separated by extra space.
+ */
+void hexprint(const char *label, uint8_t *data, uint32_t size) {
   const int bytes_per_line = 16;
 
   printf("%s, size = %u\n", label, size);
